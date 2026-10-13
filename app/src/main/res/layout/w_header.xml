@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/block"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="24dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/spark"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/ic_bars" />
+
+    <TextView
+        android:fontFamily="@font/pt_serif"
+        android:textStyle="bold"
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:maxLines="1"
+        android:text="@string/widget_title"
+        android:textSize="13sp" />
+
+    <TextView
+        android:fontFamily="@font/pt_sans"
+        android:id="@+id/plan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:maxLines="1"
+        android:textSize="11sp" />
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:fontFamily="@font/pt_sans"
+        android:id="@+id/updated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFeatureSettings="tnum"
+        android:maxLines="1"
+        android:textSize="11sp" />
+
+    <FrameLayout
+        android:id="@+id/refresh"
+        android:layout_width="30dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="-6dp"
+        android:contentDescription="@string/action_refresh">
+
+        <ImageView
+            android:id="@+id/refresh_icon"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_refresh" />
+
+        <ProgressBar
+            android:id="@+id/refresh_progress"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

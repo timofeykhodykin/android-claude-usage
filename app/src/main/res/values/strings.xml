@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Claude Usage</string>
+    <string name="widget_title">Claude</string>
+
+    <!-- Actions -->
+    <string name="action_add">Add</string>
+    <string name="action_add_widget">Add widget</string>
+    <string name="action_apply_all">Apply to all</string>
+    <string name="action_back">Back</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_ok">OK</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_save">Save</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_out">Sign out</string>
+    <string name="off">Off</string>
+
+    <!-- Limits -->
+    <string name="session_title">Session</string>
+    <string name="session_subtitle">5-hour limit</string>
+    <string name="session_short">5h</string>
+    <string name="weekly_title">Week</string>
+    <string name="weekly_subtitle">Weekly limit, all models</string>
+    <string name="weekly_short">7d</string>
+    <string name="percent">%1$s%%</string>
+    <string name="no_data_yet">No data yet</string>
+    <string name="not_started">Not started — starts with your next message</string>
+    <string name="reset_happened">Reset — starts again with your next message</string>
+    <string name="reset_short_done">reset</string>
+    <string name="resets_in_dh">Resets in %1$dd %2$dh</string>
+    <string name="resets_in_hm">Resets in %1$dh %2$dm</string>
+    <string name="resets_in_m">Resets in %1$dm</string>
+    <string name="resets_at">Resets %1$s</string>
+    <string name="in_dh">in %1$dd %2$dh</string>
+    <string name="in_hm">in %1$dh %2$dm</string>
+    <string name="in_m">in %1$dm</string>
+    <string name="today_at">today %1$s</string>
+    <string name="tomorrow_at">tomorrow %1$s</string>
+    <string name="week_elapsed">%1$s%% of the week has passed</string>
+    <string name="other_limits">Other limits</string>
+    <string name="model_weekly">%1$s · week</string>
+    <string name="extra_usage">Extra usage</string>
+
+    <!-- Time -->
+    <string name="unit_s">%1$ss</string>
+    <string name="unit_m">%1$sm</string>
+    <string name="unit_h">%1$sh</string>
+    <string name="unit_d">%1$sd</string>
+    <string name="updated_ago">Updated %1$s · %2$s ago</string>
+    <string name="never_updated">Never updated</string>
+    <string name="source_api">usage API</string>
+    <string name="minutes_short">%1$d min</string>
+
+    <!-- Sessions estimate -->
+    <string name="sessions_learning">Sessions left: learning from your usage…</string>
+    <string name="sessions_estimating">Sessions left: estimating, needs a bit more use…</string>
+    <string name="sessions_precise">≈ %1$s ± %2$s of %3$s ± %4$s full sessions left</string>
+    <string name="sessions_range">%1$s–%2$s of %3$s–%4$s full sessions left</string>
+    <string name="sessions_short">≈ %1$s of %2$s sessions left</string>
+    <string name="sessions_short_range">%1$s–%2$s sessions left</string>
+    <string name="sessions_at_least">at least %1$s</string>
+    <string name="sessions_help_title">Full sessions left</string>
+    <string name="sessions_help_what">Full 5-hour sessions (0 → 100% of the session limit) that fit in what\'s left of the weekly limit, and in a whole week.</string>
+    <string name="sessions_help_learning">Learned from how much the weekly limit grows as the session limit does; shows up once you\'ve used some of a session.</string>
+    <plurals name="sessions_help_learned">
+        <item quantity="one">Learned from how much the weekly limit grew in %1$d session since %2$s; recent days count more. ± and ranges cover ~95%%.</item>
+        <item quantity="other">Learned from how much the weekly limit grew in %1$d sessions since %2$s; recent days count more. ± and ranges cover ~95%%.</item>
+    </plurals>
+    <string name="sessions_help_rough">So far: %1$s of %2$s full sessions left. The weekly limit has to move a few more points to narrow this down.</string>
+    <string name="sessions_help_changed">The limits seem to have changed around %1$s, so older data is ignored.</string>
+
+    <!-- Chart -->
+    <string name="chart_title">Over time</string>
+    <string name="chart_session">Session</string>
+    <string name="chart_week">Week</string>
+    <string name="chart_not_started">Starts with your next message</string>
+    <string name="rate_per_hour">%1$s%%/h</string>
+    <string name="caption_hits_limit">At %1$s you\'d hit the limit at %2$s</string>
+    <string name="caption_by_reset">At %1$s: ≈ %2$s%% by the reset</string>
+    <string name="caption_last_stretch">Last active stretch: %1$s</string>
+    <string name="caption_week_pace">%1$s%% used · %2$s%% of the week has passed</string>
+    <string name="caption_short_hits">Limit at %1$s at this pace</string>
+    <string name="caption_short_by_reset">≈ %1$s%% by the reset</string>
+    <string name="caption_short_week">%1$s%% of the week passed</string>
+    <string name="chart_readout_projected">%1$s · ≈ %2$s%% at this pace</string>
+    <string name="chart_legend_title">Reading the chart</string>
+    <string name="chart_legend_session">Line: your usage in the current 5-hour window. Faint where nobody was watching (phone asleep), so only both ends are known.\n\nGray band: a straight-line fit of each stretch of active use; its slope is the pace.\n\nDashed: where the current pace leads by the reset.\n\nDrag across the chart for the value and pace at any moment.</string>
+    <string name="chart_legend_week">Line: your usage this week. Faint where nobody was watching (phone asleep).\n\nGray band: a straight-line fit of each stretch of active use; its slope is the pace.\n\nThin diagonal: even pace through the week. Above it, you\'re using the week faster than it passes.\n\nDrag across the chart for the value at any moment.</string>
+
+    <!-- Status -->
+    <string name="error_network">Can\'t reach Anthropic. Showing the last data.</string>
+    <string name="error_rate_limited">Rate limited by Anthropic; backing off.</string>
+    <string name="error_rate_limited_until">Rate limited by Anthropic — next automatic try at %1$s. Showing the last data.</string>
+    <string name="error_forbidden">Access denied (HTTP 403). Anthropic may block your network or region — check your VPN.</string>
+    <string name="error_server">Usage request failed (HTTP %1$d).</string>
+    <string name="error_unexpected">Unexpected response from the usage endpoint.</string>
+    <string name="error_signed_out">Sign in again</string>
+    <string name="banner_signed_out">Your sign-in expired or was revoked. Showing the last data.</string>
+
+    <!-- Home -->
+    <string name="widgets_title">Home screen widgets</string>
+    <string name="widgets_none">Rings, bars and charts of your limits</string>
+    <plurals name="widgets_count">
+        <item quantity="one">%1$d widget on your home screen</item>
+        <item quantity="other">%1$d widgets on your home screen</item>
+    </plurals>
+    <string name="gallery_title">Widgets</string>
+    <string name="gallery_hint">Every widget can be resized, and customized later: long-press it on the home screen.</string>
+    <string name="gallery_hint_manual">Your launcher can\'t add widgets from here: long-press the home screen, choose Widgets and find Claude Usage.</string>
+
+    <!-- Widgets -->
+    <string name="widget_ring_name">Ring</string>
+    <string name="widget_ring_description">Session and weekly usage as rings, from 1×1</string>
+    <string name="widget_bars_name">Bars</string>
+    <string name="widget_bars_description">Usage bars with reset times</string>
+    <string name="widget_chart_name">Chart</string>
+    <string name="widget_chart_description">Usage over time with your pace</string>
+    <string name="widget_dashboard_name">Dashboard</string>
+    <string name="widget_dashboard_description">Everything: bars, sessions left and a chart</string>
+    <string name="widget_sign_in_title">Claude Usage</string>
+    <string name="widget_sign_in_text">Tap to sign in</string>
+    <string name="widget_loading_title">Loading usage…</string>
+    <string name="widget_loading_text">Tap to open the app</string>
+    <string name="widget_config_title">Customize widget</string>
+    <string name="widget_config_make_default">Use for new widgets</string>
+    <string name="widget_config_default_done">New widgets will look like this</string>
+
+    <!-- Widget options -->
+    <string name="option_show">Show</string>
+    <string name="option_show_session">Session</string>
+    <string name="option_show_week">Week</string>
+    <string name="option_show_both">Both</string>
+    <string name="option_chart">Chart</string>
+    <string name="option_theme">Theme</string>
+    <string name="option_palette">Colors</string>
+    <string name="palette_claude">Claude</string>
+    <string name="palette_dynamic">Wallpaper</string>
+    <string name="option_bars">Bars</string>
+    <string name="bars_usage">By usage</string>
+    <string name="bars_accent">Accent</string>
+    <string name="option_opacity">Background</string>
+    <string name="option_resets">Reset times</string>
+    <string name="option_header">Header</string>
+    <string name="option_header_hint">Title, plan, update time and a refresh button, where there\'s room</string>
+    <string name="option_tap">On tap</string>
+    <string name="tap_open">Open app</string>
+    <string name="tap_refresh">Refresh</string>
+    <string name="theme_system">System</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_account">Account</string>
+    <string name="settings_updates">Updates</string>
+    <string name="settings_notifications">Notifications</string>
+    <string name="settings_widgets">Widgets</string>
+    <string name="settings_appearance">Appearance</string>
+    <string name="settings_privacy">Privacy</string>
+    <string name="account_unknown">Signed in</string>
+    <string name="account_scope">Read-only access (scope user:profile): the app can see your profile and usage, but not your chats, and it can\'t send messages.</string>
+    <string name="background_refresh">Refresh widgets every</string>
+    <string name="background_refresh_hint">While the app is open it refreshes every minute. In the background Android may delay updates to save battery, especially with the screen off. The usage API is rate-limited, so very short intervals don\'t pay off.</string>
+    <string name="battery_ok">Background activity allowed</string>
+    <string name="battery_ok_hint">Widgets update on schedule.</string>
+    <string name="battery_restricted">Battery optimization is on</string>
+    <string name="battery_restricted_hint">Android, and Samsung phones especially, may hold back widget updates for a long time.</string>
+    <string name="battery_allow">Allow background activity</string>
+    <string name="notify_reset">When the session limit resets</string>
+    <string name="notify_reset_hint">After you used some of it: a fresh 5-hour window is ready.</string>
+    <string name="notify_threshold">When the session reaches</string>
+    <string name="widget_defaults_hint">How new widgets look. Each widget can be changed on its own: long-press it on the home screen.</string>
+    <string name="option_app_theme">App theme</string>
+    <string name="option_dynamic">Wallpaper colors</string>
+    <string name="option_dynamic_hint">Use your wallpaper\'s colors instead of Claude\'s</string>
+    <string name="privacy_text">• Signs in through claude.ai in your browser; the app never sees your password.\n• Asks only for read access to your profile and usage (scope user:profile).\n• Tokens are encrypted with a key in the Android Keystore, are never logged and never leave this phone: backups are off.\n• Talks only to api.anthropic.com and platform.claude.com, over HTTPS.\n• Keeps a usage history (percentages and reset times, 5 weeks) on this phone. Signing out deletes everything.\n• No analytics, no ads, no other servers.</string>
+    <string name="about_version">Version %1$s (%2$d)</string>
+    <string name="about_disclaimer">Unofficial, not affiliated with Anthropic. Claude is a trademark of Anthropic, PBC.</string>
+    <string name="sign_out_title">Sign out?</string>
+    <string name="sign_out_text">The app forgets your sign-in and deletes the usage history on this phone. Widgets will ask you to sign in again.</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel">Usage limits</string>
+    <string name="notification_channel_description">Session limit resets and thresholds</string>
+    <string name="notification_reset_title">Session limit reset</string>
+    <string name="notification_reset_text">A fresh 5-hour window is ready (you had used %1$s%%).</string>
+    <string name="notification_threshold_title">Session at %1$s%%</string>
+
+    <!-- Sign-in -->
+    <string name="signin_tagline">Your Claude plan\'s limits at a glance — in the app and on your home screen.</string>
+    <string name="signin_feature_widgets_title">Widgets of every size</string>
+    <string name="signin_feature_widgets_text">Rings, bars and charts that keep themselves up to date.</string>
+    <string name="signin_feature_private_title">Read-only and private</string>
+    <string name="signin_feature_private_text">Access to your usage only — not your chats. Tokens stay encrypted on this phone.</string>
+    <string name="signin_feature_fresh_title">Knows your pace</string>
+    <string name="signin_feature_fresh_text">Usage over time, where your pace leads, and how many full sessions are left this week.</string>
+    <string name="signin_button">Sign in with Claude</string>
+    <string name="signin_with_code">Sign in with a code instead</string>
+    <string name="signin_waiting">Waiting for you to sign in in the browser…</string>
+    <string name="signin_exchanging">Signing in…</string>
+    <string name="signin_reopen">Open the browser again</string>
+    <string name="signin_manual_hint">Sign in in the browser, then copy the code it shows and paste it here.</string>
+    <string name="signin_code_label">Code</string>
+    <string name="signin_code_submit">Continue</string>
+    <string name="signin_footer">Opens claude.ai in your browser. Unofficial app, not affiliated with Anthropic.</string>
+    <string name="signin_expired">Your sign-in expired. Please sign in again.</string>
+    <string name="signin_expired_email">The sign-in for %1$s expired. Please sign in again.</string>
+    <string name="signin_failed_denied">Access wasn\'t granted. Try again when you\'re ready.</string>
+    <string name="signin_failed_invalid">That sign-in link expired. Please try again.</string>
+    <string name="signin_failed_wrong_code">That code doesn\'t match this sign-in. Copy the whole code and try again.</string>
+    <string name="signin_failed_network">Can\'t reach Anthropic. Check your connection (or VPN) and try again.</string>
+    <string name="signin_failed_server">Signing in failed. Please try again in a moment.</string>
+    <string name="signin_failed_no_browser">No browser found to sign in with.</string>
+    <string name="signin_page_done_title">You\'re signed in</string>
+    <string name="signin_page_done_text">Return to Claude Usage — your limits are loading.</string>
+    <string name="signin_page_open_app">Open Claude Usage</string>
+    <string name="signin_page_denied_title">Access not granted</string>
+    <string name="signin_page_denied_text">You can close this page and try again from the app.</string>
+    <string name="signin_page_failed_title">Signing in failed</string>
+    <string name="signin_page_failed_text">Close this page and try again from the app.</string>
+    <string name="signin_page_expired_title">This sign-in has ended</string>
+    <string name="signin_page_expired_text">Start again from the Claude Usage app.</string>
+</resources>

@@ -1,0 +1,12 @@
+.gradle/
+.kotlin/
+build/
+/local.properties
+/keystore.properties
+/local/
+/dist/
+.idea/
+*.iml
+.DS_Store
+captures/
+CLAUDE.md
